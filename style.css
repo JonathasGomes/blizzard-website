@@ -1,0 +1,283 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+:root {
+    --cor-branco: #ffffff;
+    --cor-preta: #000000;
+    --cor-cinza-texto: #BCC0CA;
+    --cor-azul-claro: #00AEFF;
+    --cor-azul-hover: #40C2FF;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    color: var(--cor-branco);
+}
+
+.cabecalho {
+    background: url(assets/banner/banner-diablo-mobile.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 0;
+    padding-bottom: calc(700 / 500 * 100%);
+    position: relative;
+}
+
+.cabecalho img {
+    cursor: pointer;
+}
+
+.nav-bar {
+    display: flex;
+    justify-content: space-between;
+    padding: 24px;
+}
+
+.logo-blizzard {
+    width: 70px;
+    height: 32px;
+}
+
+.nav-bar__divisao {
+    position: relative;
+}
+
+hr {
+    opacity: 0.3;
+}
+
+.linha-azul {
+    position: absolute;
+    color: var(--cor-azul-claro);
+    opacity: 1.0;
+    width: 43px;
+    top: 0;
+    margin-left: 24px;
+}
+
+.banner-conteudo {
+    display: flex;
+    flex-direction: column;
+    padding-left: 22px;
+    padding-top: 51px;
+    width: 72%;
+}
+
+.banner-conteudo__titulo {
+    font-size: 34px;
+    line-height: 1.1;
+}
+
+.banner-conteudo__descricao {
+    font-weight: 400;
+    padding-top: 16px;
+    padding-bottom: 32px;
+}
+
+.banner-conteudo__ancora {
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+    text-align: center;
+    width: 150px;
+    height: 46px;
+    padding: 13px 0px;
+    background-color: var(--cor-azul-claro);
+    border-radius: 4px;
+}
+
+.banner-conteudo__ancora:hover {
+    background-color: var(--cor-azul-hover);
+}
+
+.banner-slider {
+    margin-top: 28px;
+    display: flex;
+    gap: 16px;
+}
+
+.banner-slider img {
+    width: 42px;
+    height: 42px;
+    cursor: pointer;
+}
+
+.header__divisao {
+    margin-top: 5%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.linha-final-header {
+    height: 2px;
+    background-color: var(--cor-azul-claro);
+    width: 186px;
+    opacity: 1.0;
+    border: 1px solid var(--cor-azul-claro);
+}
+
+.conteudo-principal {
+    background-color: var(--cor-preta);
+    padding: 0 24px;
+    /* height: 1610px; APAGAR QUANDO TERMINAR O CONTEUDO PRINCIPAL */
+}
+
+.conteudo-principal__jogos-exclusivos {
+    padding-top: 52px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.conteudo-principal__jogos-exclusivos__titulo {
+    width: 0%;
+    line-height: 1.1;
+}
+
+.conteudo-principal__jogos-exclusivos__todos-jogos {
+    color: var(--cor-azul-claro);
+    text-decoration: none;
+    align-self: flex-end;
+    display: flex;
+    gap: 12px;
+    font-weight: 600;
+}
+
+.destaque-jogos {
+    margin-top: 57px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+}
+
+.card-game {
+    width: 156px;
+    height: 213px;
+    position: relative;
+    margin: 1% 0;
+    cursor: pointer;
+}
+
+.card-game__capa-game {
+    width: 100%;
+    height: 100%;
+}
+
+.card-game__logo-game, .card-blizzard-logo, .card-ver-jogos__ancora {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.card-game__logo-game{
+    top: 80%;
+    left: 50%;
+}
+
+.card-ver-jogos {
+    position: relative;
+    border: none;
+    padding-bottom: 52px;
+  }
+  
+.card-ver-jogos::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border: 1px solid var(--cor-cinza-texto);
+    opacity: 0.2;
+    pointer-events: none;
+}
+
+.card-blizzard-logo {
+    top: 40%;
+    left: 50%;
+}
+
+.card-ver-jogos__ancora {
+    top: 60%;
+    left: 64%;
+    text-decoration: none;
+    font-size: 14px;
+    width: 100%;
+    font-weight: 600;
+}
+
+.rodape {
+    /* margin-top: 62px; */
+    background-image: url(assets/footer/footer-background-photoaidcom-darken\ \(2\).png);
+    background-size: cover;
+    /* background-position: center; */
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+    height: 1000px;
+    padding: 63px 24px;
+    position: relative;
+}
+
+.rodape__titulo {
+    font-weight: 700;
+    width: 50%;
+    padding: 30px 0;
+}
+
+.rodape__sobre-battlenet {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.rodape__sobre-battlenet__linha {
+    list-style-type: none;
+    color: var(--cor-cinza-texto);
+}
+
+.rodape__sobre-battlenet__linha-icon {
+    padding-right: 16px;
+}
+
+.rodape__ancora-download {
+    margin: 40px 0;
+    font-weight: 600;
+    width: 260px;
+    height: 52px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    background-color: var(--cor-azul-claro);
+    text-decoration: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.rodape__ancora-download__celular{
+    display: flex;
+    gap: 20px;
+    text-decoration: none;
+}
+
+.rodape__ancora-download__celular span{
+    width: 68%;
+} 
+
+.rodape__ancora-download__celular span span{
+    text-decoration: underline;
+} 
+
+.rodape__battle-net-plataform {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+}
