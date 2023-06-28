@@ -17,30 +17,39 @@
     color: var(--cor-branco);
 }
 
+body {
+    position: relative;
+}
+
 .cabecalho {
-    background: url(assets/banner/banner-diablo-mobile.jpg);
+    /* background: url(assets/banner/banner-diablo-mobile.jpg); */
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     width: 100%;
-    height: 0;
-    padding-bottom: calc(700 / 500 * 100%);
-    position: relative;
+    /* height: 0px; */
+    position: absolute;
 }
 
 .cabecalho img {
     cursor: pointer;
 }
 
+/* .banner-imagem {
+    background: url(assets/banner/banner-diablo-mobile.jpg);
+    height: 100vh;
+    background-repeat: no-repeat;
+} */
+
 .nav-bar {
     display: flex;
     justify-content: space-between;
-    padding: 24px;
+    padding: 1.5rem;
 }
 
 .logo-blizzard {
-    width: 70px;
-    height: 32px;
+    width: 4.375rem;
+    height: 2rem;
 }
 
 .nav-bar__divisao {
@@ -61,26 +70,36 @@ hr {
 }
 
 .banner-conteudo {
+    background-image: url(assets/banner/banner-diablo.jpg);
     display: flex;
     flex-direction: column;
-    padding-left: 22px;
-    padding-top: 51px;
-    width: 72%;
+    padding-left: 1.375rem;
+    padding-top: 3.188rem;
+    /* width: 100%; */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 36%;
+    height: 100%;
+}
+
+.banner-conteudo__titulo, .banner-conteudo__descricao {
+    width: 64%;
 }
 
 .banner-conteudo__titulo {
-    font-size: 34px;
+    font-size: 2.125rem;
     line-height: 1.1;
+    padding-top: 80px;
 }
 
 .banner-conteudo__descricao {
     font-weight: 400;
-    padding-top: 16px;
-    padding-bottom: 32px;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
 }
 
 .banner-conteudo__ancora {
-    font-size: 14px;
+    font-size: 0.875rem;
     font-weight: 600;
     text-decoration: none;
     text-align: center;
@@ -96,7 +115,7 @@ hr {
 }
 
 .banner-slider {
-    margin-top: 28px;
+    margin: 48px 0 62px 0;
     display: flex;
     gap: 16px;
 }
@@ -108,10 +127,7 @@ hr {
 }
 
 .header__divisao {
-    margin-top: 5%;
-    position: absolute;
-    bottom: 0;
-    left: 0;
+    position: relative;
 }
 
 .linha-final-header {
@@ -120,6 +136,10 @@ hr {
     width: 186px;
     opacity: 1.0;
     border: 1px solid var(--cor-azul-claro);
+    position: absolute;
+    left: -26px;
+    right: 0;
+    bottom: 0;
 }
 
 .conteudo-principal {
