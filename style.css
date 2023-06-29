@@ -170,17 +170,25 @@ hr {
 
 .destaque-jogos {
     margin-top: 57px;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 14px;
+    /* display: flex;
+    flex-wrap: wrap; */
+    /* gap: 14px;
+    justify-content: center; */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
 }
 
 .card-game {
-    width: 156px;
-    height: 213px;
+    /* width: 9.75rem;
+    height: 13.313rem; */
     position: relative;
-    margin: 1% 0;
+    margin: 4% 0;
     cursor: pointer;
+    justify-self: center;
+    width: auto;
+    height: auto;
+    max-width: 240px;
 }
 
 .card-game__capa-game {
@@ -234,8 +242,9 @@ hr {
 
 .rodape {
     /* margin-top: 62px; */
-    background-image: url(assets/footer/footer-background-photoaidcom-darken\ \(2\).png);
+    background-image: url(assets/footer/footer-background.png);
     background-size: cover;
+    background-position: 18%;
     /* background-position: center; */
     background-repeat: no-repeat;
     height: 100vh;
