@@ -23,9 +23,9 @@ body {
 
 .cabecalho {
     /* background: url(assets/banner/banner-diablo-mobile.jpg); */
-    background-size: cover;
+    /* background-size: cover;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: center; */
     width: 100%;
     /* height: 0px; */
     position: absolute;
@@ -83,12 +83,12 @@ hr {
 }
 
 .banner-conteudo__titulo, .banner-conteudo__descricao {
-    width: 64%;
-    max-width: 230px;
+    width: 70%;
+    max-width: 270px;
 }
 
 .banner-conteudo__titulo {
-    font-size: 2.125rem;
+    font-size: 40px;
     line-height: 1.1;
     padding-top: 80px;
 }
@@ -111,8 +111,9 @@ hr {
     border-radius: 4px;
 }
 
-.banner-conteudo__ancora:hover {
+.banner-conteudo__ancora:hover, .nav-bar__ancoras__logar:hover{
     background-color: var(--cor-azul-hover);
+    transition: 0.5s;
 }
 
 .banner-slider {
@@ -324,4 +325,105 @@ hr {
 .rodape__battle-net-plataform__image {
     position: absolute;
     right: 0;
+}
+
+.nav-bar__ancoras {
+    display: none;
+}
+
+.banner-conteudo__trailer-jogo-logo {
+    display: none;
+}
+
+@media (min-width: 768px){
+
+    .nav-bar__ancoras-e-menu-hamburguer {
+        display: flex;
+        align-items: center;
+    }
+
+    .nav-bar__ancoras {
+        display: flex;
+        padding-right: 90px;
+    }
+
+    .nav-bar__ancoras a {
+        text-decoration: none;
+        font-size: 14px;
+        font-weight: 500;
+        margin: 0 8px;
+    }
+
+    .nav-bar__ancoras__criar-conta {
+        padding: 10px 18px;
+        border: 1px solid var(--cor-branco);
+        border-radius: 4px;
+    }
+
+    .nav-bar__ancoras__criar-conta:hover {
+        background-color: var(--cor-branco);
+        color: var(--cor-preta);
+        transition: 1s;
+    }
+
+    .nav-bar__ancoras__logar {
+        padding: 10px 20px;
+        background-color: var(--cor-azul-claro);
+        border-radius: 4px;
+        display: flex;
+        gap: 10px;
+        justify-content: center;
+        align-items: baseline;
+    }
+
+    .nav-bar__ancoras__logar span {
+        display: inline-block;
+        width: 14px;
+        height: 17px;
+        background-image: url(assets/banner/icon-login.png);
+        background-size: center;
+        background-repeat: no-repeat;
+    }
+    
+    .banner-conteudo {
+        display: flex;
+        flex-direction: row;
+        background-position: 30%;
+    }
+
+    .banner-conteudo__titulo, .banner-conteudo__descricao {
+        width: 64%;
+        max-width: 64%;
+        min-width: 64%;
+    }
+
+    .banner-conteudo__titulo {
+        font-weight: 700;
+        font-size: 64px;
+        line-height: 1.1;
+        padding-top: 120px;
+    }
+    
+    .banner-conteudo__descricao {
+        font-weight: 400;
+        padding-top: 1rem;
+        padding-bottom: 2rem;
+    }
+
+    .banner-conteudo__trailer-jogo-logo {
+        display: block;
+        position: relative;
+    }
+
+    .banner-conteudo__jogo-logo{
+        position: absolute;
+        top: 80px;
+        right: 0px;
+    }
+
+    .banner-conteudo__trailer-jogo{
+        position: absolute;
+        top: 460px;
+        right: 16px;
+    }
 }
