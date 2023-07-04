@@ -69,7 +69,7 @@ hr {
     margin-left: 24px;
 }
 
-.banner-conteudo {
+.banner {
     background-image: url(assets/banner/banner-diablo.jpg);
     display: flex;
     flex-direction: column;
@@ -82,8 +82,12 @@ hr {
     height: 100%;
 }
 
+.banner-conteudo {
+    
+}
+
 .banner-conteudo__titulo, .banner-conteudo__descricao {
-    width: 70%;
+    width: 80%;
     max-width: 270px;
 }
 
@@ -335,7 +339,17 @@ hr {
     display: none;
 }
 
+.conteudo-principal__plataformas {
+    display: none;
+}
+
 @media (min-width: 768px){
+
+    .logo-blizzard {
+        align-self: center;
+        width: 86px;
+        height: 40px;
+    }
 
     .nav-bar__ancoras-e-menu-hamburguer {
         display: flex;
@@ -344,7 +358,7 @@ hr {
 
     .nav-bar__ancoras {
         display: flex;
-        padding-right: 90px;
+        padding-right: 70px;
     }
 
     .nav-bar__ancoras a {
@@ -373,7 +387,7 @@ hr {
         display: flex;
         gap: 10px;
         justify-content: center;
-        align-items: baseline;
+        align-items: center;
     }
 
     .nav-bar__ancoras__logar span {
@@ -385,21 +399,32 @@ hr {
         background-repeat: no-repeat;
     }
     
+    .banner {
+        background-position: 35%;
+        padding-left: 58px;
+    }
+
+    .nav-bar {
+        padding: 1.5rem 58px;
+    }
+
+    .linha-azul {
+        margin-left: 59px;
+    }
     .banner-conteudo {
         display: flex;
         flex-direction: row;
-        background-position: 30%;
     }
 
     .banner-conteudo__titulo, .banner-conteudo__descricao {
-        width: 64%;
-        max-width: 64%;
-        min-width: 64%;
+        width: 80%;
+        min-width: 600px;
+        max-width: 630px;
     }
 
     .banner-conteudo__titulo {
         font-weight: 700;
-        font-size: 64px;
+        font-size: 60px;
         line-height: 1.1;
         padding-top: 120px;
     }
@@ -413,17 +438,41 @@ hr {
     .banner-conteudo__trailer-jogo-logo {
         display: block;
         position: relative;
+        width: 80%;
     }
 
     .banner-conteudo__jogo-logo{
         position: absolute;
-        top: 80px;
-        right: 0px;
+        top: 50px;
+        right: 40px;
     }
 
     .banner-conteudo__trailer-jogo{
         position: absolute;
-        top: 460px;
-        right: 16px;
+        top: 394px;
+        right: 58px;
+        border-radius: 4px;
+    }
+
+    .banner-conteudo__ancora {
+        padding: 13px 26px;
+    }
+
+    .banner-slider {
+        margin: 60px 0 100px 0;
+    }
+    
+    .linha-final-header {
+        left: -60px;
+        width: 300px;
+    }
+
+    .banner-slider {
+        gap: 20px;
+    }
+    
+    .conteudo-principal__plataformas {
+        display: flex;
+        gap: 24px;
     }
 }
