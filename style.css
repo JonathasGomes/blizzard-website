@@ -162,7 +162,6 @@ hr {
 }
 
 .conteudo-principal__jogos-exclusivos__titulo {
-    width: 0%;
     line-height: 1.1;
 }
 
@@ -200,7 +199,7 @@ hr {
 
 .card-game__capa-game {
     width: 100%;
-    height: 100%;
+    /* height: 100%; */
 }
 
 .card-game__logo-game, .card-blizzard-logo, .card-ver-jogos__ancora {
@@ -343,6 +342,14 @@ hr {
     display: none;
 }
 
+.card-game h5, .card-game p {
+    display: none;
+}
+
+.svg-ver-jogos-branco {
+    display: none;
+}
+
 @media (min-width: 768px){
 
     .logo-blizzard {
@@ -471,8 +478,51 @@ hr {
         gap: 20px;
     }
     
+    .conteudo-principal__jogos-exclusivos {
+        padding: 52px 3% 0 3%;
+    }
+
     .conteudo-principal__plataformas {
         display: flex;
+        align-items: flex-end;
         gap: 24px;
+    }
+
+    .destaque-jogos {
+        /* display: flex;
+        flex-wrap: wrap; */
+        /* gap: 14px;
+        justify-content: center; */
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-row-gap: 20px;
+    }
+
+    .card-game h5, .card-game p {
+        display: block;
+    }
+
+    .card-game h5 {
+        font-weight: 600;
+        font-size: 16px;
+    }
+
+    .card-game p {
+        color: var(--cor-cinza-texto);
+        font-weight: 400;
+    }
+
+    .card-game__logo-game {
+        top: 68%;
+        height: auto;
+    }
+
+    .card-ver-jogos {
+        height: 80%;
+    }
+
+    .svg-ver-jogos-branco {
+        display: inline-block;
+        padding-right: 10px;
     }
 }
