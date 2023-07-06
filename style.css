@@ -6,6 +6,7 @@
     --cor-cinza-texto: #BCC0CA;
     --cor-azul-claro: #00AEFF;
     --cor-azul-hover: #40C2FF;
+    --cor-cinza-jogo-estilo: #969696;
 }
 
 
@@ -19,6 +20,7 @@
 
 body {
     position: relative;
+    overflow-x: hidden;
 }
 
 .cabecalho {
@@ -110,12 +112,12 @@ hr {
     text-align: center;
     width: 150px;
     height: 46px;
-    padding: 13px 0px;
+    padding: 13px 30px;
     background-color: var(--cor-azul-claro);
     border-radius: 4px;
 }
 
-.banner-conteudo__ancora:hover, .nav-bar__ancoras__logar:hover{
+.banner-conteudo__ancora:hover, .nav-bar__ancoras__logar:hover, .rodape__ancora-download:hover{
     background-color: var(--cor-azul-hover);
     transition: 0.5s;
 }
@@ -195,12 +197,26 @@ hr {
     width: auto;
     height: auto;
     max-width: 230px;
+    overflow: hidden;
 }
+
 
 .card-game__capa-game {
     width: 100%;
+    border-radius: 2px;
     /* height: 100%; */
 }
+
+.card-game img.card-game__capa-game {
+    transition: transform 0.3s;
+    /* transform-origin: center center; */
+}
+  
+.card-game:hover img.card-game__capa-game {
+    transform: scale(1.1) translateY(-4%); /* Zoom de 20% */
+    /* width: 100%; */
+}
+
 
 .card-game__logo-game, .card-blizzard-logo, .card-ver-jogos__ancora {
     position: absolute;
@@ -268,7 +284,7 @@ hr {
 
 .rodape__titulo {
     font-weight: 700;
-    width: 50%;
+    width: 150px;
     padding: 30px 0;
 }
 
@@ -308,9 +324,9 @@ hr {
     text-decoration: none;
 }
 
-.rodape__ancora-download__celular span{
+/* .rodape__ancora-download__celular span{
     width: 68%;
-} 
+}  */
 
 .rodape__ancora-download__celular span span{
     text-decoration: underline;
@@ -325,7 +341,7 @@ hr {
     height: 300px;
 }
 
-.rodape__battle-net-plataform__image {
+.rodape__battle-net-plataform__image-celular {
     position: absolute;
     right: 0;
 }
@@ -348,6 +364,14 @@ hr {
 
 .svg-ver-jogos-branco {
     display: none;
+}
+
+.rodape__battle-net-plataform {
+    display: none;
+}
+
+.conteudo-principal__plataformas img {
+    cursor: pointer;
 }
 
 @media (min-width: 768px){
@@ -388,7 +412,7 @@ hr {
     }
 
     .nav-bar__ancoras__logar {
-        padding: 10px 20px;
+        padding: 0px 28px;
         background-color: var(--cor-azul-claro);
         border-radius: 4px;
         display: flex;
@@ -462,7 +486,7 @@ hr {
     }
 
     .banner-conteudo__ancora {
-        padding: 13px 26px;
+        padding: 14px 34px;
     }
 
     .banner-slider {
@@ -508,7 +532,8 @@ hr {
     }
 
     .card-game p {
-        color: var(--cor-cinza-texto);
+        color: var(--cor-cinza-jogo-estilo);
+        font-size: 14px;
         font-weight: 400;
     }
 
@@ -525,4 +550,50 @@ hr {
         display: inline-block;
         padding-right: 10px;
     }
-}
+
+    .rodape {
+        height: auto;
+        display: flex;
+        padding: 101px 47px;
+    }
+    .rodape__titulo {
+        font-size: 32px;
+        width: 230px;
+    }
+
+    .rodape__sobre-battlenet__linha {
+        font-size: 18px;
+        white-space: nowrap;
+    }
+
+    .rodape__battle-net-plataform__image-celular {
+        display: none;
+    }
+
+    .rodape__battle-net-plataform {
+        display: block;
+        position: relative;
+    }
+
+    .battlenet-plataform-image {
+        position: absolute;
+        top: 20px;
+        right: -180px;
+        left: auto;
+        width: 100%;
+        height: auto;
+        max-width: 900px;
+        max-height: 500px;
+    }
+
+    .battlenet-plataform-wow-image {
+        position: absolute;
+        right: -140px;
+        top: 220px;
+        width: 80%;
+        left: auto;
+        height: auto;
+        max-height: 300px;
+        max-width: 600px;
+    }
+} 
