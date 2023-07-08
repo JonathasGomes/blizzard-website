@@ -374,6 +374,10 @@ hr {
     cursor: pointer;
 }
 
+.banner-slider-pc {
+    display: none;
+}
+
 @media (min-width: 768px){
 
     .logo-blizzard {
@@ -596,4 +600,32 @@ hr {
         max-height: 300px;
         max-width: 600px;
     }
-} 
+}
+
+@media (min-width: 1366px){
+
+    .banner-slider {
+        display: none;
+    }
+
+    .menu-hamburguer {
+        display: none;
+    }
+
+    .nav-bar__ancoras {
+        padding-right: 0;
+    }
+
+    .banner {
+        height: 100vh;
+    }
+
+    .banner-conteudo__jogo-logo {
+        top: 120px;
+        right: 80px;
+    }
+
+    .banner-slider-pc {
+        display: block;
+    }
+}
