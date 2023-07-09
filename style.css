@@ -378,6 +378,10 @@ hr {
     display: none;
 }
 
+.nav-ancoras-novas {
+    display: none;
+}
+
 @media (min-width: 768px){
 
     .logo-blizzard {
@@ -612,20 +616,80 @@ hr {
         display: none;
     }
 
+    .nav-bar {
+        padding: 1.5rem 112px;
+    }
+
+    .nav-ancoras-novas {
+        display: flex;
+        gap: 34px;
+        align-items: center;
+        font-weight: 500;
+        font-size: 16px;
+        padding-right: 132px;
+    }
+
+    .nav-ancoras-novas a {
+        text-decoration: none;
+    }
+
+    .nav-ancoras-novas a:hover {
+        color: var(--cor-azul-hover);
+    }
     .nav-bar__ancoras {
         padding-right: 0;
     }
 
+    .linha-azul {
+        margin-left: 112px;
+    }
+
     .banner {
         height: 100vh;
+        padding-left: 112px;
     }
 
     .banner-conteudo__jogo-logo {
         top: 120px;
-        right: 80px;
+        right: 112px;
     }
 
+    .banner-conteudo__trailer-jogo {
+        /* top: 450px; */
+        right: 112px;
+    }
     .banner-slider-pc {
-        display: block;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        padding-top: 160px;
+        /* padding-left: 112px; */
+        padding-right: 160px;
+    }
+
+    .header__divisao {
+        height: 100vh;
+    }
+
+    .banner-conteudo__titulo {
+        /* padding-top: 180px; */
+        font-size: 64px;
+    }
+
+    .linha-final-header {
+        width: 600px;
+        left: -140px;
+    }
+
+    .banner-conteudo__descricao {
+        padding-bottom: 46px;
+    }
+
+    .banner-slider-pc img {
+        cursor: pointer;
+    }
+
+    .destaque-jogos {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
     }
 }
