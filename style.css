@@ -7,6 +7,7 @@
     --cor-azul-claro: #00AEFF;
     --cor-azul-hover: #40C2FF;
     --cor-cinza-jogo-estilo: #969696;
+    --cor-cinza-titulo-games: #8F9199;
 }
 
 
@@ -382,6 +383,14 @@ hr {
     display: none;
 }
 
+.conteudo-principal__games {
+    display: none;
+}
+
+.banner-conteudo__trailer-jogo h4 {
+    display: none;
+}
+
 @media (min-width: 768px){
 
     .logo-blizzard {
@@ -658,6 +667,15 @@ hr {
         /* top: 450px; */
         right: 112px;
     }
+
+    .banner-conteudo__trailer-jogo h4 {
+        display: block;
+        text-align: end;
+        padding-bottom: 14px;
+        font-weight: 600;
+        font-size: 13px;
+    }
+
     .banner-slider-pc {
         display: flex;
         flex-direction: column;
@@ -689,7 +707,27 @@ hr {
         cursor: pointer;
     }
 
+    .conteudo-principal {
+        padding: 0 0 69px 0;
+    }
+
+    .conteudo-principal__games {
+        display: block;
+        font-weight: 600;
+        font-size: 15px;
+        color: var(--cor-cinza-titulo-games);
+    }
+
+    .conteudo-principal__jogos-exclusivos {
+        padding: 52px 112px 0 112px;
+    }
+
     .destaque-jogos {
         grid-template-columns: 1fr 1fr 1fr 1fr;
+        padding: 0px 90px;
+    }
+
+    .rodape {
+        padding-left: 112px;
     }
 }
