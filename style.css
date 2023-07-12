@@ -214,7 +214,8 @@ hr {
 }
   
 .card-game:hover img.card-game__capa-game {
-    transform: scale(1.1) translateY(-4%); /* Zoom de 20% */
+    transform: scale(1.1) translateY(-4%);
+    opacity: 0.9; /* Zoom de 20% */
     /* width: 100%; */
 }
 
@@ -391,6 +392,44 @@ hr {
     display: none;
 }
 
+.gif-overlay {
+    position: absolute;
+    /* top: 0; */
+    left: 0;
+    bottom: 7px;
+    width: 280px;
+    height: 158px;
+    background-image: url('assets/banner/diablo-animation.gif');
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.banner-conteudo__trailer-jogo:hover .gif-overlay {
+    opacity: 1;
+}
+
+.centered-image {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -30%);
+}
+
+.centered-image img {
+    display: block;
+}
+
+.gif-overlay img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 55px;
+    height: 55px;
+    transform: translate(-50%, -54%);
+}
+
 @media (min-width: 768px){
 
     .logo-blizzard {
@@ -500,6 +539,7 @@ hr {
         top: 394px;
         right: 58px;
         border-radius: 4px;
+        cursor: pointer;
     }
 
     .banner-conteudo__ancora {
@@ -649,6 +689,22 @@ hr {
         padding-right: 0;
     }
 
+    .nav-ancora-jogos, .nav-ancora-esportes {
+        display: flex;
+        align-items: flex-end;
+        gap: 14px;
+    }
+
+    .nav-ancoras-novas span{
+        display: inline-block;
+        width: 14px;
+        height: 17px;
+        background-image: url(assets/banner/nav-expansion-svg.svg);
+        background-size: center;
+        background-repeat: no-repeat;
+        text-align: end;
+    }
+
     .linha-azul {
         margin-left: 112px;
     }
@@ -659,12 +715,12 @@ hr {
     }
 
     .banner-conteudo__jogo-logo {
-        top: 120px;
+        top: 80px;
         right: 112px;
     }
 
     .banner-conteudo__trailer-jogo {
-        /* top: 450px; */
+        top: 340px;
         right: 112px;
     }
 
