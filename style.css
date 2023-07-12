@@ -412,7 +412,7 @@ hr {
 
 .centered-image {
     position: absolute;
-    top: 50%;
+    top: 40%;
     left: 50%;
     transform: translate(-50%, -30%);
 }
@@ -741,6 +741,9 @@ hr {
         padding-right: 160px;
     }
 
+    .centered-image {
+        top: 50%;
+    }
     .header__divisao {
         height: 100vh;
     }
@@ -785,5 +788,23 @@ hr {
 
     .rodape {
         padding-left: 112px;
+    }
+}
+
+@media (min-width: 1440px){
+    .banner-slider-pc {
+        padding-top: 220px;
+    }
+    
+    .banner-conteudo__jogo-logo {
+        top: 140px;
+    }
+
+    .banner-conteudo__trailer-jogo {
+        top: 400px;
+    }
+
+    .banner-conteudo__titulo {
+        padding-top: 180px;
     }
 }
