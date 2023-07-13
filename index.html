@@ -30,37 +30,36 @@
             <hr class="linha-azul">
         </div>
     </header>
-    <section class="banner">
+    <section id="banner" class="banner">
         <div class="banner-conteudo">
             <div class="banner-slider-pc">
-                <img src="assets/banner/slider-ativo-diablo.png" alt="Diablo 4 logo">
-                <img src="assets/banner/slider-hearthstone.png" alt="Hearthstone logo">
-                <img src="assets/banner/slider-wow.png" alt="World of Warcraft logo">
-                <img src="assets/banner/slider-diablo3.png" alt="Diablo 3 logo">
-                <img src="assets/banner/slider-starcraft.png" alt="Starcraft logo">
+                <img src="assets/banner/slider-ativo-diablo.png" alt="Diablo 4 logo" data-value="game1" onclick="changeGame(0)">
+                <img class="" src="assets/banner/slider-hearthstone.png" alt="Hearthstone logo" data-value="game2" onclick="changeGame(1)">
+                <img src="assets/banner/slider-wow.png" alt="World of Warcraft logo" data-value="game3" onclick="changeGame(2)">
+                <img src="assets/banner/slider-diablo3.png" alt="Diablo 3 logo" data-value="game4">
+                <img src="assets/banner/slider-starcraft.png" alt="Starcraft logo" data-value="game5">
             </div>
             <div class="banner-conteudo__esquerda">
-                <h1 class="banner-conteudo__titulo">Retorne à escuridão com o game Diablo IV</h1>
-                <p class="banner-conteudo__descricao">O retorno de Lilith traz uma era de escuridão e sofrimento</p>
-                <a class="banner-conteudo__ancora" href="#">Jogue Agora</a>
+                <h1 id="titulo" class="banner-conteudo__titulo">Retorne à escuridão com o game Diablo IV</h1>
+                <p id="texto" class="banner-conteudo__descricao">O retorno de Lilith traz uma era de escuridão e sofrimento</p>
+                <a id="ancora" class="banner-conteudo__ancora" href="#">Jogue Agora</a>
                 <div class="banner-slider">
-                    <img src="assets/banner/slider-ativo-diablo.png" alt="Diablo 4 logo">
-                    <img src="assets/banner/slider-hearthstone.png" alt="Hearthstone logo">
-                    <img src="assets/banner/slider-wow.png" alt="World of Warcraft logo">
+                    <img src="assets/banner/slider-ativo-diablo.png" alt="Diablo 4 logo" onclick="changeGame(0)">
+                    <img src="assets/banner/slider-hearthstone.png" alt="Hearthstone logo" onclick="changeGame(1)">
+                    <img src="assets/banner/slider-wow.png" alt="World of Warcraft logo" onclick="changeGame(2)">
                     <img src="assets/banner/slider-diablo3.png" alt="Diablo 3 logo">
                     <img src="assets/banner/slider-starcraft.png" alt="Starcraft logo">
                 </div>
             </div>
             <div class="banner-conteudo__trailer-jogo-logo">
-                <img class="banner-conteudo__jogo-logo"src="assets/banner/logo-diablo.png" alt="">
+                <img id="jogo-logo" class="banner-conteudo__jogo-logo"src="assets/banner/logo-diablo.png" alt="">
                 <div class="banner-conteudo__trailer-jogo">
                     <h4>ASSISTA O TRAILER</h4>
-                    <img class="trailer-jogo" src="assets/banner/video-preview-diablo.png" alt="">
+                    <img id="trailer-jogo-preview" class="trailer-jogo" src="assets/banner/video-preview-diablo.png" alt="">
                     <div class="centered-image">
                         <img src="assets/banner/play-trailer.png" alt="">
                     </div>
-                    <div class="gif-overlay"><img src="assets/banner/play-trailer-hover.png" alt=""></div>
-
+                    <div id="trailer-jogo" class="gif-overlay"><img src="assets/banner/play-trailer-hover.png" alt=""></div>
                 </div>
             </div>
         </div>
