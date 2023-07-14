@@ -22,7 +22,7 @@ function changeGame(index) {
       'Retorne à escuridão com o game Diablo IV',
       'Novo pacote de expansão de Hearthstone',
       'Desbrave as Terras Sombrias em Shadowlands!',
-      'Novo título do jogo Diablo 3',
+      'Explore o reino sombrio de Diablo Immortal',
       'Novo título do jogo Starcraft'
   ];
 
@@ -31,38 +31,44 @@ function changeGame(index) {
       'O retorno de Lilith traz uma era de escuridão e sofrimento',
       'A Horda e a Aliança se encontraram no Vale Alterac para lutar',
       'O que jaz além do mundo que você conhece?',
-      'Descrição do jogo Diablo 3',
+      'Enfrente males ancestrais e descubra o que aconteceu entre Diablo II e Diablo III',
       'Descrição do jogo Starcraft'
   ];
 
   const logoJogos = [
     'assets/banner/logo-diablo.png',
     'assets/banner/logo-hearthstone.png',
-    'assets/banner/logo-wow.png'
+    'assets/banner/logo-wow.png',
+    'assets/banner/logo-diablo3.png'
   ];
 
   const backgroundBanner = [
     'url(assets/banner/banner-diablo.jpg)',
     'url(assets/banner/banner-hearthstone.jpg)',
     'url(assets/banner/banner-wow.jpg)',
+    'url(assets/banner/1293868.jpg)',
   ];
 
   const textsAncora = [
     'Jogue Agora',
     'Reserve agora na pré-venda',
-    'Reserve agora na pré-venda'
+    'Reserve agora na pré-venda',
+    'Jogue Agora',
+    'Jogue Agora'
   ];
   
   const trailerJogosPreview = [
     'assets/banner/video-preview-diablo.png',
     'assets/banner/video-preview-hearthstone.png',
     'assets/banner/video-preview-wow.png',
+    'assets/banner/video-preview-diablo3.png',
   ];
 
   const trailerJogos = [
     'url(assets/banner/diablo-animation.gif)',
     'url(assets/banner/hearthstone-animation.gif)',
-    'url(assets/banner/wow-animation.gif)'
+    'url(assets/banner/wow-animation.gif)',
+    'url(assets/banner/src_assets_img_diablo-animation.webm)'
   ];
 
   // Atualizar imagem ativada no banner-slider-pc

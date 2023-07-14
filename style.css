@@ -435,6 +435,7 @@ hr {
     -moz-box-shadow: 6px 21px 44px -3px rgba(0,0,0,0.51);
     box-shadow: 6px 21px 44px -3px rgba(0,0,0,0.51);
 }
+
 @media (min-width: 768px){
 
     .logo-blizzard {
@@ -773,7 +774,6 @@ hr {
         width: 48px;
         height: 48px;
     }
-
     .conteudo-principal {
         padding: 0 0 69px 0;
     }
@@ -797,6 +797,14 @@ hr {
     .rodape {
         padding-left: 112px;
     }
+
+    .battlenet-plataform-image {
+        top: -70px;
+        right: -80px;
+        max-width: none;
+        height: none;
+        width: 80%;
+    }
 }
 
 @media (min-width: 1440px){
@@ -814,5 +822,17 @@ hr {
 
     .banner-conteudo__titulo {
         padding-top: 180px;
+    }
+
+    .rodape {
+        height: 100vh;
+    }
+
+    .card-game {
+        max-width: none;
+    }
+
+    .card-game__capa-game {
+        width: none;
     }
 }
