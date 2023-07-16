@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blizzard Entertainment</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
     <header class="cabecalho">
@@ -81,80 +82,113 @@
             <a class="conteudo-principal__jogos-exclusivos__todos-jogos" href="#"><img src="assets/main/verjogos-svg.svg">Ver todos jogos</a>
         </div>
         <section class="destaque-jogos">
-            <div class="card-game">
-                <img class="card-game__capa-game" src="assets/main/diablo-capa-main.jpg" alt="">
-                <img class="card-game__logo-game"src="assets/main/diablo-logo-main.png" alt="">
-                <h5>Diablo II: Resurrected</h5>
+            <div class="card-game" data-aos="fade-right">
+                <img class="card-game__capa-game" src="assets/main/diablo4-capa-main.png" alt="">
+                <video class="card-game__video card-game__capa-game" alt="">
+                    <source src="https://blz-contentstack-assets.akamaized.net/v3/assets/blta8f9a8e092360c6c/bltaf45d228971c8ac2/647793bc05cfa510cc7e7ad2/2023_Blizzard_Homepage_D4_600x800.webm" type="video/webm">
+                </video>
+                <img class="card-game__logo-game"src="assets/main/diablo4-logo-main.png" alt="">
+                <h5>Diablo IV</h5>
                 <p>RPG de ação</p>
             </div>
-            <div class="card-game">
-                <img class="card-game__capa-game" src="assets/main/overwatch-capa-main.png" alt="">
-                <img class="card-game__logo-game"src="assets/main/overwatch-logo-main.png" alt="">
-                <h5>Overwatch</h5>
-                <p>Ação em equipe</p>
-            </div>
-            <div class="card-game">
-                <img class="card-game__capa-game" src="assets/main/overwatch2-capa-main.png" alt="">
-                <img class="card-game__logo-game"src="assets/main/overwatch2-logo-main.png" alt="">
-                <h5>Overwatch 2</h5>
-                <p>Ação em equipe</p>
-            </div>
-            <div class="card-game">
-                <img class="card-game__capa-game" src="assets/main/wow-capa-main.png" alt="">
-                <img class="card-game__logo-game"src="assets/main/wow-logo-main.png" alt="">
-                <h5>World of Warcraft Classic</h5>
-                <p>RPG multijogador em massa</p>
-            </div>
-            <div class="card-game">
+            <div class="card-game" data-aos="fade-right">
                 <img class="card-game__capa-game" src="assets/main/hearthstone-capa-main.png" alt="">
+                <video class="card-game__video card-game__capa-game" alt="">
+                    <source src="https://blz-contentstack-assets.akamaized.net/v3/assets/blta8f9a8e092360c6c/blt179cdb4c00207bf3/61e09e56dd90e76ceccb0fd6/Tile_Anim_Hearthstone.webm" type="video/webm">
+                </video>
                 <img class="card-game__logo-game"src="assets/main/hearthstone-logo-main.png" alt="">
                 <h5>Hearthstone</h5>
                 <p>Jogo de cards estratégicos</p>
             </div>
-            <div class="card-game">
-                <img class="card-game__capa-game" src="assets/main/warcraft-capa-main.png" alt="">
-                <img class="card-game__logo-game"src="assets/main/warcraft-logo-main.png" alt="">
-                <h5>Heroes of storm</h5>
-                <p>RPG de ação</p>
+            <div class="card-game" data-aos="fade-right">
+                <img class="card-game__capa-game" src="assets/main/overwatch2-capa-main.png" alt="">
+                <video class="card-game__video card-game__capa-game" alt="">
+                    <source src="https://blz-contentstack-assets.akamaized.net/v3/assets/blta8f9a8e092360c6c/bltdb6db2793b223c5f/649dca55bfce2afe1fbe20be/OTH-2023-17893-HomePgSeas5Update-OW_MV_v1A_600x800_30.webm" type="video/webm">
+                </video>
+                <img class="card-game__logo-game"src="assets/main/overwatch2-logo-main.png" alt="">
+                <h5>Overwatch 2</h5>
+                <p>Ação em equipe</p>
             </div>
-            <div class="card-game">
-                <img class="card-game__capa-game" src="assets/main/diablo4-capa-main.png" alt="">
-                <img class="card-game__logo-game"src="assets/main/diablo4-logo-main.png" alt="">
+            <div class="card-game" data-aos="fade-right">
+                <img class="card-game__capa-game" src="assets/main/wow-capa-main.png" alt="">
+                <video class="card-game__video card-game__capa-game" alt="">
+                    <source src="https://blz-contentstack-assets.akamaized.net/v3/assets/blta8f9a8e092360c6c/blt919e574fb72f6768/64aef6ed250c7cf39ac732c2/OTH-2023-17893-HomePgSeas5Update-WOW_MV_v1_600x800_30.webm" type="video/webm">
+                </video>
+                <img class="card-game__logo-game"src="assets/main/wow-logo-main.png" alt="">
+                <h5>World of Warcraft Classic</h5>
+                <p>RPG multijogador em massa</p>
+            </div>
+            <div class="card-game" data-aos="fade-right">
+                <img class="card-game__capa-game" src="assets/main/overwatch-capa-main.png" alt="">
+                <video class="card-game__video card-game__capa-game" alt="">
+                    <source src="https://blz-contentstack-assets.akamaized.net/v3/assets/blta8f9a8e092360c6c/bltdb6db2793b223c5f/649dca55bfce2afe1fbe20be/OTH-2023-17893-HomePgSeas5Update-OW_MV_v1A_600x800_30.webm" type="video/webm">
+                </video>
+                <img class="card-game__logo-game"src="assets/main/overwatch-logo-main.png" alt="">
+                <h5>Overwatch</h5>
+                <p>Ação em equipe</p>
+            </div>
+            <div class="card-game" data-aos="fade-right">
+                <img class="card-game__capa-game" src="assets/main/warcraft-capa-main.png" alt="">
+                <video class="card-game__video card-game__capa-game" alt="">
+                    <source src="https://blz-contentstack-assets.akamaized.net/v3/assets/blta8f9a8e092360c6c/blt653463908ec0a7ba/61e09e56c3c4160d6b5c80b8/Tile_Anim_Warcraft_III.webm" type="video/webm">
+                </video>
+                <img class="card-game__logo-game"src="assets/main/warcraft-logo-main.png" alt="">
                 <h5>Warcraft III Reforged</h5>
                 <p>RPG de ação</p>
             </div>
-            <div class="card-game">
+            <div class="card-game" data-aos="fade-right">
+                <img class="card-game__capa-game" src="assets/main/diablo-capa-main.jpg" alt="">
+                <video class="card-game__video card-game__capa-game" alt="">
+                    <source src="https://blz-contentstack-assets.akamaized.net/v3/assets/blta8f9a8e092360c6c/blt3eedef779b38f1e4/61e09e7d8d32880c1d339e16/Tile_Anim_Diablo_II_Res.webm" type="video/webm">
+                </video>
+                <img class="card-game__logo-game"src="assets/main/diablo-logo-main.png" alt="">
+                <h5>Diablo II: Resurrected</h5>
+                <p>RPG de ação</p>
+            </div>
+            <div class="card-game" data-aos="fade-right">
                 <img class="card-game__capa-game" src="assets/main/starcraft2-capa-main.png" alt="">
+                <video class="card-game__video card-game__capa-game" alt="">
+                    <source src="https://blz-contentstack-assets.akamaized.net/v3/assets/blta8f9a8e092360c6c/blt1a7e29e11edae89f/61e09e56e76d30151d4b9e74/Tile_Anim_Starcraft_II.webm" type="video/webm">
+                </video>
                 <img class="card-game__logo-game"src="assets/main/starcraft2-logo-main.png" alt="">
-                <h5>Diablo IV</h5>
-                <p>RPG de ação</p>
-            </div>
-            <div class="card-game">
-                <img class="card-game__capa-game" src="assets/main/hots-capa-main.png" alt="">
-                <img class="card-game__logo-game"src="assets/main/hots-logo-main.png" alt="">
-                <h5>Diablo III</h5>
-                <p>RPG de ação</p>
-            </div>
-            <div class="card-game">
-                <img class="card-game__capa-game" src="assets/main/starcraft-capa-main.png" alt="">
-                <img class="card-game__logo-game"src="assets/main/starcraft-logo-main.png" alt="">
                 <h5>StarCraft II</h5>
                 <p>RPG de ação</p>
             </div>
-            <div class="card-game">
-                <img class="card-game__capa-game" src="assets/main/diablo3-capa-main.png" alt="">
-                <img class="card-game__logo-game"src="assets/main/diablo3-logo-main.png" alt="">
+            <div class="card-game" data-aos="fade-right">
+                <img class="card-game__capa-game" src="assets/main/hots-capa-main.png" alt="">
+                <video class="card-game__video card-game__capa-game" alt="">
+                    <source src="https://blz-contentstack-assets.akamaized.net/v3/assets/blta8f9a8e092360c6c/bltf74b3729a909bd00/61e09e57c822146f702d7389/Tile_Anim_Heroes.webm" type="video/webm">
+                </video>
+                <img class="card-game__logo-game"src="assets/main/hots-logo-main.png" alt="">
+                <h5>Heroes of storm</h5>
+                <p>Moba</p>
+            </div>
+            <div class="card-game" data-aos="fade-right">
+                <img class="card-game__capa-game" src="assets/main/starcraft-capa-main.png" alt="">
+                <video class="card-game__video card-game__capa-game" alt="">
+                    <source src="https://blz-contentstack-assets.akamaized.net/v3/assets/blta8f9a8e092360c6c/blt3c4cd4bcfe8e89b1/61e09e56316a323cc80fd64e/Tile_Anim_Starcraft_Remastered.webm" type="video/webm">
+                </video>
+                <img class="card-game__logo-game"src="assets/main/starcraft-logo-main.png" alt="">
                 <h5>StarCraft Remastered</h5>
                 <p>RPG de ação</p>
             </div>
-            <div class="card-game card-ver-jogos">
+            <div class="card-game" data-aos="fade-right">
+                <img class="card-game__capa-game" src="assets/main/diablo3-capa-main.png" alt="">
+                <video class="card-game__video card-game__capa-game" alt="">
+                    <source src="https://blz-contentstack-assets.akamaized.net/v3/assets/blta8f9a8e092360c6c/blt595a0545aa59d03c/61e09e7d39eaba527b159418/Tile_Anim_Diablo_III.webm" type="video/webm">
+                </video>
+                <img class="card-game__logo-game"src="assets/main/diablo3-logo-main.png" alt="">
+                <h5>Diablo III</h5>
+                <p>RPG de ação</p>
+            </div>
+            <div class="card-game card-ver-jogos" data-aos="fade-right">
                 <img class="logo-blizzard card-blizzard-logo" src="assets/banner/logo-blizzard.png" alt="">
                 <a class="card-ver-jogos__ancora" href=""><img class="svg-ver-jogos-branco" src="assets/main/verjogos-branco.svg">Ver todos jogos</a>
             </div>
         </section>
     </section>
     <footer class="rodape">
-        <div class="rodape-battlenet-conteudo-direita">
+        <div class="rodape-battlenet-conteudo-direita" data-aos="zoom-in">
             <img class="battlenet-logo"src="assets/footer/battlenet-logo.png" alt="">
             <h3 class="rodape__titulo">Baixe agora o battle.net</h3>
             <ul class="rodape__sobre-battlenet">
@@ -166,11 +200,15 @@
             <a class="rodape__ancora-download__celular"href="#"><img class="" src="assets/footer/telefone.svg" alt=""><span>Também disponível como <br><span>aplicativo móvel</span></aplicativo></span></a>
             <img class="rodape__battle-net-plataform__image-celular"src="assets/footer/battlenet-plataform-mobile.png" alt="">
         </div>
-        <div class="rodape__battle-net-plataform">
+        <div class="rodape__battle-net-plataform" data-aos="zoom-in">
             <img class="battlenet-plataform-image" src="assets/footer/battlenet-plataform.png" alt="">
             <img class="battlenet-plataform-wow-image" src="assets/footer/battlenet-plataform-wow.png" alt="">
         </div>
     </footer>
     <script src="main.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>

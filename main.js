@@ -64,14 +64,16 @@ function changeGame(index) {
     'assets/banner/video-preview-diablo.png',
     'assets/banner/video-preview-hearthstone.png',
     'assets/banner/video-preview-wow.png',
-    'assets/banner/video-preview-diablo3.png',
+    'assets/banner/video-preview-diablo3.jpg',
+    'assets/banner/video-preview-starcraft2.jpg'
   ];
 
   const trailerJogos = [
     'url(assets/banner/diablo-animation.gif)',
     'url(assets/banner/hearthstone-animation.gif)',
     'url(assets/banner/wow-animation.gif)',
-    'url(assets/banner/src_assets_img_diablo-animation.webm)'
+    'url(assets/banner/diablo-immortal-animation.gif)',
+    'url(assets/banner/starcraft2-animation.gif)'
   ];
 
   // Atualizar imagem ativada no banner-slider-pc
@@ -114,4 +116,34 @@ function changeGame(index) {
   ancoraBanner.textContent = textsAncora[index];
   trailerJogoPrevia.src = trailerJogosPrevia[index];
   trailerJogoGif.style.backgroundImage = trailerJogos[index];
+
+  AOS.refresh();
 }
+
+const cardGames = document.querySelectorAll('.card-game');
+
+cardGames.forEach(cardGame => {
+  const image = cardGame.querySelector('.card-game__capa-game');
+  const video = cardGame.querySelector('.card-game__video');
+
+  cardGame.addEventListener('mouseover', () => {
+    image.style.display = 'none';
+    video.style.display = 'block';
+
+    // Iniciar a reprodução do vídeo
+    video.play().catch(error => {
+      console.log('Erro ao reproduzir o vídeo:', error);
+    });
+  });
+
+  cardGame.addEventListener('mouseout', () => {
+    image.style.display = 'block';
+    video.style.display = 'none';
+    video.pause();
+  });
+
+  video.addEventListener('ended', () => {
+    video.currentTime = 0; // Reinicia o vídeo para o início
+    video.play(); // Reproduz o vídeo novamente
+  });
+});
