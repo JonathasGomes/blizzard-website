@@ -969,4 +969,37 @@ hr {
         width: 790px;
         left: -320px;
     }
+    .conteudo-principal__jogos-exclusivos {
+        padding: 52px 303px 0 303px;
+    }
+
+    .destaque-jogos {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        padding: 0px 303px;
+    }
+
+    .card-game h5 {
+        font-size: 20px;
+    }
+
+    .card-game p {
+        font-size: 18px;
+    }
+
+    .card-ver-jogos {
+        height: 82%;
+        width: 90%;
+    }
+
+    .card-ver-jogos__ancora {
+        font-size: 16px;
+    }
+
+    .rodape {
+        padding-left: 303px;
+    }
+
+    .rodape__titulo {
+        width: 400px;
+    }
 }
