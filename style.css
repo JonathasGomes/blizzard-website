@@ -895,5 +895,63 @@ hr {
 }
 
 @media (min-width: 1920px){
+    .nav-bar {
+        padding: 1.5rem 303px;
+    }
 
+    .linha-azul {
+        margin-left: 303px;
+    }
+
+    .banner {
+        padding-left: 303px
+    }
+
+    .banner-conteudo__titulo, .banner-conteudo__descricao {
+        width: 80%;
+        min-width: 700px;
+        max-width: 700px;
+    }
+
+    .banner-conteudo__descricao {
+        font-size: 22px;
+    }
+
+    .banner-conteudo__titulo {
+        padding-top: 260px;
+        font-size: 74px;
+    }
+
+    .banner-conteudo__ancora {
+        padding: 18px 48px;
+        font-size: 18px;
+    }
+    
+    .banner-conteudo__trailer-jogo {
+        top: 560px;
+        right: 303px;
+    }
+
+    .banner-conteudo__trailer-jogo h4 {
+        font-size: 15px;
+    }
+    
+    .banner-conteudo__jogo-logo {
+        top: 200px;
+        right: 303px;
+    }
+    .banner-slider-pc {
+        padding-top: 300px;
+        padding-right: 200px;
+    }
+    
+    .banner-slider-pc img {
+        width: 54px;
+        height: 54px;
+    }
+    
+    .linha-final-header {
+        width: 790px;
+        left: -320px;
+    }
 }
