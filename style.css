@@ -899,6 +899,11 @@ hr {
         padding: 1.5rem 303px;
     }
 
+    .nav-bar .logo-blizzard {
+        width: 100px;
+        height: 40px;
+    }
+
     .linha-azul {
         margin-left: 303px;
     }
@@ -906,6 +911,16 @@ hr {
     .banner {
         padding-left: 303px
     }
+
+    .nav-ancoras-novas {
+        gap: 38px;
+        font-size: 20px;
+        padding-right: 60px;
+    }
+
+    .nav-bar__ancoras a {
+        font-size: 16px;
+      }
 
     .banner-conteudo__titulo, .banner-conteudo__descricao {
         width: 80%;
@@ -935,7 +950,7 @@ hr {
     .banner-conteudo__trailer-jogo h4 {
         font-size: 15px;
     }
-    
+
     .banner-conteudo__jogo-logo {
         top: 200px;
         right: 303px;
