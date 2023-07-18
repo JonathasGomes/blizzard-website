@@ -868,6 +868,10 @@ hr {
     .card-game__capa-game {
         width: none;
     }
+
+    .card-game__video {
+        height: 384px;
+    }
 }
 
 @media (min-width: 1920px){
