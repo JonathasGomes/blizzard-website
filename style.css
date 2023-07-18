@@ -64,12 +64,13 @@ hr {
 }
 
 .linha-azul {
+    background-color: var(--cor-azul-claro);
     position: absolute;
-    color: var(--cor-azul-claro);
     opacity: 1.0;
     width: 43px;
     top: 0;
     margin-left: 24px;
+    height: 2px;
 }
 
 .banner {
@@ -348,7 +349,7 @@ hr {
     right: 0;
 }
 
-.nav-bar__ancoras {
+.nav-bar__ancoras-login {
     display: none;
 }
 
@@ -380,7 +381,7 @@ hr {
     display: none;
 }
 
-.nav-ancoras-novas {
+.nav-bar__ancoras {
     display: none;
 }
 
@@ -507,12 +508,12 @@ hr {
         align-items: center;
     }
 
-    .nav-bar__ancoras {
+    .nav-bar__ancoras-login {
         display: flex;
         padding-right: 70px;
     }
 
-    .nav-bar__ancoras a {
+    .nav-bar__ancoras-login a {
         text-decoration: none;
         font-size: 14px;
         font-weight: 500;
@@ -733,7 +734,7 @@ hr {
         padding: 1.5rem 112px;
     }
 
-    .nav-ancoras-novas {
+    .nav-bar__ancoras {
         display: flex;
         gap: 34px;
         align-items: center;
@@ -742,14 +743,14 @@ hr {
         padding-right: 132px;
     }
 
-    .nav-ancoras-novas a {
+    .nav-bar__ancoras a {
         text-decoration: none;
     }
 
-    .nav-ancoras-novas a:hover {
+    .nav-bar__ancoras a:hover {
         color: var(--cor-azul-hover);
     }
-    .nav-bar__ancoras {
+    .nav-bar__ancoras-login {
         padding-right: 0;
     }
 
@@ -759,7 +760,7 @@ hr {
         gap: 14px;
     }
 
-    .nav-ancoras-novas span{
+    .nav-bar__ancoras span{
         display: inline-block;
         width: 14px;
         height: 17px;
@@ -912,13 +913,13 @@ hr {
         padding-left: 303px
     }
 
-    .nav-ancoras-novas {
+    .nav-bar__ancoras {
         gap: 38px;
         font-size: 20px;
         padding-right: 60px;
     }
 
-    .nav-bar__ancoras a {
+    .nav-bar__ancoras-login a {
         font-size: 16px;
       }
 
@@ -997,9 +998,45 @@ hr {
 
     .rodape {
         padding-left: 303px;
+        padding-top: 160px;
     }
 
     .rodape__titulo {
-        width: 400px;
+        width: 500px;
+        font-size: 40px;
+    }
+
+    .rodape__sobre-battlenet__linha {
+        font-size: 22px;
+    }
+    
+    .rodape__ancora-download {
+        font-size: 18px;
+        width: 290px;
+        height: 60px;
+    }
+    
+    .rodape__ancora-download__celular {
+        font-size: 19px;
+    }
+
+    .battlenet-plataform-wow-image {
+        right: 148px;
+        top: 360px;
+        width: 66%;
+        left: none;
+        height: none;
+        max-height: none;
+        max-width: none;
+    }
+
+    .battlenet-plataform-image {
+        top: -90px;
+        right: 10px;
+        left: none;
+        width: 100%;
+        height: none;
+        max-width: none;
+        max-height: none;
     }
 }

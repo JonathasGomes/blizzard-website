@@ -1,16 +1,15 @@
 function changeGame(index) {
   const imagensPC = document.querySelectorAll('.banner-slider-pc img');
   const imagensMobile = document.querySelectorAll('.banner-slider img');
-  const title = document.getElementById('titulo');
-  const text = document.getElementById('texto');
+  const titulos = document.getElementById('titulo');
+  const texto = document.getElementById('texto');
   const jogoLogo = document.getElementById('jogo-logo');
   const banner = document.getElementById('banner');
   const ancoraBanner = document.getElementById('ancora');
   const trailerJogoPrevia = document.getElementById('trailer-jogo-preview');
   const trailerJogoGif = document.getElementById('trailer-jogo');
 
-  // Definir caminhos das imagens ativadas
-  const imagePaths = [
+  const sliderAtivo = [
       'assets/banner/slider-ativo-diablo.png',
       'assets/banner/slider-ativo-hearthstone.png',
       'assets/banner/slider-ativo-wow.png',
@@ -18,8 +17,7 @@ function changeGame(index) {
       'assets/banner/slider-ativo-starcraft.png'
   ];
 
-  // Definir títulos correspondentes
-  const titles = [
+  const titulosBanner = [
       'Retorne à escuridão com o game Diablo IV',
       'Novo pacote de expansão de Hearthstone',
       'Desbrave as Terras Sombrias em Shadowlands!',
@@ -27,8 +25,7 @@ function changeGame(index) {
       'Prepare-se para a Épica Batalha de StarCraft 2!'
   ];
 
-  // Definir textos correspondentes
-  const texts = [
+  const textosBanner = [
       'O retorno de Lilith traz uma era de escuridão e sofrimento',
       'A Horda e a Aliança se encontraram no Vale Alterac para lutar',
       'O que jaz além do mundo que você conhece?',
@@ -48,11 +45,11 @@ function changeGame(index) {
     'url(assets/banner/banner-diablo.jpg)',
     'url(assets/banner/banner-hearthstone.jpg)',
     'url(assets/banner/banner-wow.jpg)',
-    'url(assets/banner/1293868.jpg)',
-    'url(assets/banner/668795.jpg)'
+    'url(assets/banner/banner-diablo-imortal.jpg)',
+    'url(assets/banner/banner-starcraft2.jpg)'
   ];
 
-  const textsAncora = [
+  const textosBannerAncora = [
     'Jogue Agora',
     'Reserve agora na pré-venda',
     'Reserve agora na pré-venda',
@@ -79,8 +76,8 @@ function changeGame(index) {
   // Atualizar imagem ativada no banner-slider-pc
   imagensPC.forEach((image, i) => {
       if (i === index) {
-          image.src = imagePaths[i];
-          image.alt = titles[i];
+          image.src = sliderAtivo[i];
+          image.alt = titulosBanner[i];
       } else {
           image.src = image.src.replace('-ativo', ''); // Reverter para a imagem não ativada
           image.alt = image.getAttribute('data-value'); // Usar o atributo data-value como alt
@@ -89,8 +86,8 @@ function changeGame(index) {
 
   imagensMobile.forEach((image, i) => {
     if (i === index) {
-        image.src = imagePaths[i];
-        image.alt = titles[i];
+        image.src = sliderAtivo[i];
+        image.alt = titulosBanner[i];
 
         if(i === 1 || i === 2) {
           banner.style.backgroundPosition = '66%';
@@ -109,11 +106,11 @@ function changeGame(index) {
   });
 
   // Atualizar título e texto
-  title.textContent = titles[index];
-  text.textContent = texts[index];
+  titulos.textContent = titulosBanner[index];
+  texto.textContent = textosBanner[index];
   jogoLogo.src = logoJogos[index];
   banner.style.backgroundImage = backgroundBanner[index];
-  ancoraBanner.textContent = textsAncora[index];
+  ancoraBanner.textContent = textosBannerAncora[index];
   trailerJogoPrevia.src = trailerJogosPrevia[index];
   trailerJogoGif.style.backgroundImage = trailerJogos[index];
 
