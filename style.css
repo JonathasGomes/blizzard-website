@@ -22,6 +22,7 @@
 body {
     position: relative;
     overflow-x: hidden;
+    background-color: var(--cor-preta);
 }
 
 .cabecalho {
@@ -694,7 +695,7 @@ hr {
     }
 }
 
-@media (min-width: 1366px){
+@media (min-width: 1360px){
 
     .banner-slider {
         display: none;
