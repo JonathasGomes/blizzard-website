@@ -25,24 +25,13 @@ body {
 }
 
 .cabecalho {
-    /* background: url(assets/banner/banner-diablo-mobile.jpg); */
-    /* background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center; */
     width: 100%;
-    /* height: 0px; */
     position: absolute;
 }
 
 .cabecalho img {
     cursor: pointer;
 }
-
-/* .banner-imagem {
-    background: url(assets/banner/banner-diablo-mobile.jpg);
-    height: 100vh;
-    background-repeat: no-repeat;
-} */
 
 .nav-bar {
     display: flex;
@@ -84,10 +73,6 @@ hr {
     background-size: cover;
     background-position: 36%;
     height: 100%;
-}
-
-.banner-conteudo {
-    
 }
 
 .banner-conteudo__titulo, .banner-conteudo__descricao {
@@ -156,7 +141,6 @@ hr {
     background-color: var(--cor-preta);
     padding: 0 24px;
     padding-bottom: 69px;
-    /* height: 1610px; APAGAR QUANDO TERMINAR O CONTEUDO PRINCIPAL */
 }
 
 .conteudo-principal__jogos-exclusivos {
@@ -180,18 +164,12 @@ hr {
 
 .destaque-jogos {
     margin-top: 57px;
-    /* display: flex;
-    flex-wrap: wrap; */
-    /* gap: 14px;
-    justify-content: center; */
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 10px;
 }
 
 .card-game {
-    /* width: 9.75rem;
-    height: 13.313rem; */
     position: relative;
     margin: 4% 0;
     cursor: pointer;
@@ -326,10 +304,6 @@ hr {
     gap: 20px;
     text-decoration: none;
 }
-
-/* .rodape__ancora-download__celular span{
-    width: 68%;
-}  */
 
 .rodape__ancora-download__celular span span{
     text-decoration: underline;
@@ -1021,7 +995,7 @@ hr {
     }
 
     .battlenet-plataform-wow-image {
-        right: 148px;
+        right: 18px;
         top: 360px;
         width: 66%;
         left: none;
