@@ -321,7 +321,7 @@ hr {
 
 .rodape__battle-net-plataform__image-celular {
     position: absolute;
-    right: 0;
+    right: -30px;
 }
 
 .nav-bar__ancoras-login {
@@ -870,11 +870,12 @@ hr {
     }
 
     .card-game__video {
+        /* width: 290px; */
         height: 384px;
     }
 }
 
-@media (min-width: 1920px){
+@media (min-width: 1880px){
     .nav-bar {
         padding: 1.5rem 303px;
     }
