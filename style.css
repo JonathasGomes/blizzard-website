@@ -875,7 +875,9 @@ hr {
     }
 }
 
-@media (min-width: 1880px){
+/* Está 1860 e não 1920 pelo fato que tem navegadores com barras laterais 
+que consomem uma parte da largura da tela */
+@media (min-width: 1860px){
     .nav-bar {
         padding: 1.5rem 303px;
     }
