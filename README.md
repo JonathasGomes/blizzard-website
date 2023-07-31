@@ -2,9 +2,13 @@
     <img src="./assets/banner/logo-blizzard.png">
 </p>
 
-<p align="center">
+<!-- <p align="center">
   <img src="https://img001.prntscr.com/file/img001/tU96j8K-R1irNMA1NnBayg.png" width="100%" />
-</p>
+</p> -->
+
+
+https://github.com/JonathasGomes/blizzard-website/assets/67432436/3c1e7096-465b-44d5-979c-8a2dc71fa6a0
+
 
 ## 💻 Projeto
 
